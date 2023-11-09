@@ -1,4 +1,3 @@
-import React from 'react';
 import { ServicesData} from '../../assets/data/ServicesData';
 import ServiceItem from './ServiceItem';
 import CountUp from 'react-countup';

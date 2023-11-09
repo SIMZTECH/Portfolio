@@ -1,12 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
 import {RiAppsLine,RiYoutubeLine} from 'react-icons/ri';
 import {FiArrowUpRight} from 'react-icons/fi';
 import {BiLogoFacebookCircle,BiLogoGithub,BiLogoInstagram,BiLogoLinkedin,BiSolidMessage,BiSolidPhoneCall} from 'react-icons/bi';
 import heroImg01 from '../../assets/portfolioImg01.png';
 import heroImg02 from '../../assets/portfolioImg02.png';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import certifcation01 from '../../assets/certification01.png';
 import ribbon02 from '../../assets/ribbon02.png';
 import CountUp from 'react-countup';
 

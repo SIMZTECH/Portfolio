@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React,{useEffect,useRef} from 'react';
 import "../../App.css";
 import {BiPhoneCall} from 'react-icons/bi';
@@ -7,24 +8,23 @@ import { route } from '../../assets/data/PathRouteData';
 
 function Header() {
   const [activeTab,setActiveTab]=React.useState<string>(route[0].id);
-  const [prevactiveTab,setPrevActiveTab]=React.useState<string>('');
-  const headRef = useRef(null);
-  const menuRef = useRef(null);
+  const headRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const stickHeaderHandler=()=>{
     window.addEventListener("scroll",()=>{
       if(document.body.scrollTop>80||document.documentElement.scrollTop>80){
-        headRef.current.classList.add("sticky_header");
+        headRef.current?.classList.add("sticky_header");
       }else{
-        headRef.current.classList.remove("sticky_header");
+        headRef.current?.classList.remove("sticky_header");
       }
 
     });
   };
 
-  const toggleMenu = ()=>menuRef.current.classList.toggle('show_menu');
+  const toggleMenu = ()=>menuRef.current?.classList.toggle('show_menu');
 
-  const handleClick=(e)=>{
+  const handleClick=(e:any)=>{
     e.preventDefault();
 
     const targetAttr = e.target.getAttribute('href');

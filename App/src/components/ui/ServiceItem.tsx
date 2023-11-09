@@ -1,4 +1,3 @@
-import React from 'react';
 import { servicesDataType } from '../../assets/data/ServicesData';
 type propType={
     item:servicesDataType

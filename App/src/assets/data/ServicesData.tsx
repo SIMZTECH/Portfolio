@@ -1,4 +1,3 @@
-import React from 'react';
 import {TbWorldWww} from 'react-icons/tb';
 import {RiApps2Line} from 'react-icons/ri';
 import {BiVideoRecording} from 'react-icons/bi';

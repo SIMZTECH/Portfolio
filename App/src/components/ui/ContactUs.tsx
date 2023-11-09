@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 
 type contactMeType={
@@ -15,7 +16,7 @@ function ContactUs() {
     message:''
   });
 
-  const handleInputChange=async(e)=>{
+  const handleInputChange=async(e:any)=>{
     setOnChangeText({...textChange,[e.target.name]:e.target.value})
 
   };
@@ -56,7 +57,7 @@ function ContactUs() {
                     <input 
                      type='text'
                      name='name'
-                     value={textChange.name}
+                     value={textChange.message}
                      onChange={handleInputChange}
                      placeholder='Enter Your Name'
                      className='px-3 placeholder:text-textColor text-[17px] w-full bg-transparent focus:outline-none'

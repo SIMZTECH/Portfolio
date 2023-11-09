@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
 import project01 from '../project01.png';
 import project02 from '../project02.png';
 import project03 from '../project03.png';

@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
 import { projectDataType } from '../../assets/data/ProjectsData';
 
 type propsType={

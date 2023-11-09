@@ -1,4 +1,3 @@
-import React from 'react';
 import { formatDate } from '../../util/Utilities';
 import {FaComputer, FaWpforms} from 'react-icons/fa6';
 import {GiWorld} from 'react-icons/gi';
