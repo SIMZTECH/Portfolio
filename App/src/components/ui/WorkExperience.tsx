@@ -9,9 +9,10 @@ function WorkExperience() {
       <div className="container">
         <div className="flex items-center flex-col">
           <h1
-            data-aos="fade-up" 
-            data-aos-duration="1500" 
-            className=" text-headingColor text-[25px] sm:text-[35px] font-medium mb-1 sm:mb-3">
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className=" text-headingColor text-[25px] sm:text-[35px] font-medium mb-1 sm:mb-3"
+          >
             My Work Experience
           </h1>
           <div className="w-full sm:max-w-6xl  relative mt-3 sm:mt-8">
@@ -29,29 +30,36 @@ function WorkExperience() {
                 </span>
               </div>
               <div className="w-1/2">
-                <div className=' w-[90%] pl-0 sm:pl-16'>
-                  <div 
-                    data-aos="fade-right" 
-                    data-aos-duration="1500" 
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[16px] sm:text-[20px] font-medium'>Self-Employed, R&S Bussiness Center</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>{formatDate("05-30-2016",'')} - {formatDate("08-30-2018",'')}</p>
+                <div className=" w-[90%] pl-0 sm:pl-16">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[16px] sm:text-[20px] font-medium">
+                      Self-Employed, R&S Bussiness Center
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      {formatDate("05-30-2016", "")} -{" "}
+                      {formatDate("08-30-2018", "")}
+                    </p>
                   </div>
                 </div>
               </div>
               {/* left */}
               <div className="w-1/2 text-start flex justify-end">
-                <div className='  w-[90%]'>
-                  <div 
-                    data-aos="fade-left" 
+                <div className="  w-[90%]">
+                  <div
+                    data-aos="fade-left"
                     data-aos-duration="1500"
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[17px] sm:text-[20px] font-medium'>Computer Typist</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
-                        eos saepe doloremque cum porro consequatur 
-                        neque rerum tempora obcaecati! Fugiat minima odio illum a placeat 
-                        inventore perferendis nulla sunt dolores!
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[17px] sm:text-[20px] font-medium">
+                      Computer Typist
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      Gathered, registered and arranged material to be typed,
+                      following instructions.Printed and made copies of work.
                     </p>
                   </div>
                 </div>
@@ -70,29 +78,38 @@ function WorkExperience() {
                 </span>
               </div>
               <div className="w-1/2">
-                <div className=' w-[90%] pl-0 sm:pl-16'>
-                  <div 
-                    data-aos="fade-right" 
-                    data-aos-duration="1500" 
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[16px] sm:text-[20px] font-medium'>Shreeji Investments</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>{formatDate("11-02-2018",'')} - {formatDate("08-30-2019",'')}</p>
+                <div className=" w-[90%] pl-0 sm:pl-16">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[16px] sm:text-[20px] font-medium">
+                      Shreeji Investments
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      {formatDate("11-02-2018", "")} -{" "}
+                      {formatDate("08-30-2019", "")}
+                    </p>
                   </div>
                 </div>
               </div>
               {/* left */}
               <div className="w-1/2 text-start flex justify-end">
-                <div className='  w-[90%]'>
-                  <div 
-                    data-aos="fade-left" 
+                <div className="  w-[90%]">
+                  <div
+                    data-aos="fade-left"
                     data-aos-duration="1500"
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[17px] sm:text-[20px] font-medium'>Data Entry Clerk</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
-                        eos saepe doloremque cum porro consequatur 
-                        neque rerum tempora obcaecati! Fugiat minima odio illum a placeat 
-                        inventore perferendis nulla sunt dolores!
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[17px] sm:text-[20px] font-medium">
+                      Data Entry Clerk
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      Accurately entered data into various databases. Verified
+                      accuracy of data entered by comparing it with source
+                      documents.Sorted data and proofed source documents for
+                      accuracy prior to entry.
                     </p>
                   </div>
                 </div>
@@ -111,37 +128,47 @@ function WorkExperience() {
                 </span>
               </div>
               <div className="w-1/2">
-                <div className=' w-[90%] pl-0 sm:pl-16'>
-                  <div 
-                    data-aos="fade-right" 
-                    data-aos-duration="1500" 
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[16px] sm:text-[20px] font-medium'>Seventh Day Adventist Church</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>{formatDate("09-02-2022",'')} - {formatDate("12-25-2022",'')}</p>
+                <div className=" w-[90%] pl-0 sm:pl-16">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[16px] sm:text-[20px] font-medium">
+                      Seventh Day Adventist Church
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      {formatDate("09-02-2022", "")} -{" "}
+                      {formatDate("12-25-2022", "")}
+                    </p>
                   </div>
                 </div>
               </div>
               {/* left */}
               <div className="w-1/2 text-start flex justify-end">
-                <div className='  w-[90%]'>
-                  <div 
-                    data-aos="fade-left" 
+                <div className="  w-[90%]">
+                  <div
+                    data-aos="fade-left"
                     data-aos-duration="1500"
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[17px] sm:text-[20px] font-medium'>Web Manager</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
-                        eos saepe doloremque cum porro consequatur 
-                        neque rerum tempora obcaecati! Fugiat minima odio illum a placeat 
-                        inventore perferendis nulla sunt dolores!
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[17px] sm:text-[20px] font-medium">
+                      Web Manager
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      Editing photos in Photoshop to enhance their quality for
+                      use in print or digital formats.Developing multiple
+                      marketing materials, including brochures, flyers, and
+                      posters to promote products.Developed and maintained web
+                      applications using HTML, CSS, JavaScript and jQuery.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-             {/* 4th */}
-             <div className="w-full flex gap-4 relative mb-8">
+            {/* 4th */}
+            <div className="w-full flex gap-4 relative mb-8">
               {/* icon custom */}
               <div
                 className="absolute w-8 h-8 rounded-full border -top-1 left-1/2 transform -translate-x-1/2
@@ -152,36 +179,43 @@ function WorkExperience() {
                 </span>
               </div>
               <div className="w-1/2">
-                <div className=' w-[90%] pl-0 sm:pl-16'>
-                  <div 
-                    data-aos="fade-right" 
-                    data-aos-duration="1500" 
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[16px] sm:text-[20px] font-medium'>Emsef Enterprise</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>{formatDate("09-25-2023",'')} - To Date</p>
+                <div className=" w-[90%] pl-0 sm:pl-16">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[16px] sm:text-[20px] font-medium">
+                      Emsef Enterprise
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      {formatDate("09-25-2023", "")} - To Date
+                    </p>
                   </div>
                 </div>
               </div>
               {/* left */}
               <div className="w-1/2 text-start flex justify-end">
-                <div className='  w-[90%]'>
-                  <div 
-                    data-aos="fade-left" 
+                <div className="  w-[90%]">
+                  <div
+                    data-aos="fade-left"
                     data-aos-duration="1500"
-                    className='flex flex-col space-y-1'>
-                    <h2 className=' text-headingColor text-[17px] sm:text-[20px] font-medium'>IT Assistant</h2>
-                    <p className=' text-textColor text-[13px] sm:text-[15px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
-                        eos saepe doloremque cum porro consequatur 
-                        neque rerum tempora obcaecati! Fugiat minima odio illum a placeat 
-                        inventore perferendis nulla sunt dolores!
+                    className="flex flex-col space-y-1"
+                  >
+                    <h2 className=" text-headingColor text-[17px] sm:text-[20px] font-medium">
+                      IT Assistant
+                    </h2>
+                    <p className=" text-textColor text-[13px] sm:text-[15px]">
+                      Collaborated with other developers to ensure code
+                      quality and functionality.Participated in weekly
+                      meetings to facilitate discussion of strategies, solutions
+                      and improvements.Built dynamic webpages with React
+                      components following best practices guidelines.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-           
           </div>
         </div>
       </div>

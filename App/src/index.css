@@ -5,7 +5,7 @@
 
 @layer base{
   section{
-    @apply sm:py-[60px] py-[30px]
+    @apply sm:py-[60px] py-[30px] bg-[#f5f5fa71]
   }
 
 }

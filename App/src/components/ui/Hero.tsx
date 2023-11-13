@@ -1,52 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {RiAppsLine,RiYoutubeLine} from 'react-icons/ri';
+import {RiAppsLine} from 'react-icons/ri';
 import {FiArrowUpRight} from 'react-icons/fi';
-import {BiLogoFacebookCircle,BiLogoGithub,BiLogoInstagram,BiLogoLinkedin,BiSolidMessage,BiSolidPhoneCall} from 'react-icons/bi';
+import {BiSolidMessage,BiSolidPhoneCall} from 'react-icons/bi';
 import heroImg01 from '../../assets/portfolioImg01.png';
 import heroImg02 from '../../assets/portfolioImg02.png';
+import { socialLinks,socialType } from '../../assets/data/SocialLinks';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import ribbon02 from '../../assets/ribbon02.png';
 import CountUp from 'react-countup';
 
-type socialType={
-    id:string,
-    icon:any,
-    url:string,
-    name:string
-}
-
-const socialLinks:socialType[]=[
-    {
-        id:"01",
-        icon:<BiLogoFacebookCircle />,
-        url:'',
-        name:'facebook'
-    },
-    {
-        id:"02",
-        icon:<BiLogoGithub />,
-        url:'',
-        name:'github'
-    },
-    {
-        id:"03",
-        icon:<RiYoutubeLine/>,
-        url:'',
-        name:'youtube'
-    },
-    {
-        id:"04",
-        icon:<BiLogoInstagram />,
-        url:'',
-        name:'instagram'
-    },
-    {
-        id:"05",
-        icon:<BiLogoLinkedin />,
-        url:'',
-        name:'linked-in'
-    }
-]
 
 function Hero() {
   return (
@@ -72,11 +34,13 @@ function Hero() {
                 <div className=" md:pl-4 text-headingColor text-2xl">
                   <RiAppsLine />
                 </div>
-                <p className="text-[15px] md:text-[18px] leading-7 text-textColor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam debitis accusantium consequuntur autem omnis commodi
-                  distinctio optio est error amet? Illum molestias voluptates
-                  culpa autem! Ipsam iure beatae numquam enim?
+                <p className="text-[16px] md:text-[18px] leading-7 text-textColor font-light">
+                  Am a <span className=' text-headingColor uppercase font-bold text-[19px]'>Full Stack Developer, </span>
+                  Highly specialized in JavaScript, Java and PHP
+                  Programming Languages. I also have extensive knowledge about 
+                  computer hardware troubleshooting, and database design. Personally, I aim to leverage my abilities 
+                  to successfully fill the vacancy an i am that kind of an individual who 
+                  can be relied upon to help any team achieve its goals. 
                 </p>
               </div>
             </div>
@@ -93,15 +57,16 @@ function Hero() {
                 Hire Me
               </button>
 
-              <button className="flex font-normal md:font-[500] text-[15px] md:text-[18px] justify-center items-center gap-2 w-[110px] md:w-[130px] h-[38px]  md:h-[45px] text-headingColor border-b-[2px] border-headingColor md:leading-9">
+              <a href='#projects' className="flex font-normal md:font-[500] text-[15px] md:text-[18px] justify-center items-center 
+               gap-2 w-[110px] md:w-[130px] h-[38px]  md:h-[45px] text-headingColor border-b-[2px] border-headingColor md:leading-9">
                 <span>Portfolio</span>
                 <FiArrowUpRight />
-              </button>
+              </a>
             </div>
             <div className=" md:mt-16 mt-[30px] flex flex-col md:flex-row md:gap-5 gap-3 items-center">
               <h2 className=" text-headingColor font-medium">Check out my</h2>
               <div className="flex flex-1 items-center gap-4">
-                {socialLinks.map((item, index) => (
+                {socialLinks.map((item:socialType, index:number) => (
                   <a
                     data-aos="zoom-in"
                     data-aos-delay="100"
@@ -149,7 +114,7 @@ function Hero() {
                   <span>
                     <h4 className=" text-headingColor text-[12px] font-medium sm:text-[16px]">FOLLOWER</h4>
                     <p className="text-center text-headingColor font-semibold text-[14px] sm:text-[17px] mt-2">
-                      <CountUp start={0} end={650} suffix="+" />
+                      <CountUp start={0} end={380} suffix="+" />
                     </p>
                   </span>
                   <span>
@@ -157,7 +122,7 @@ function Hero() {
                       FOLLOWING
                     </h4>
                     <p className="text-center text-headingColor font-semibold text-[14px] sm:text-[17px] mt-2">
-                      <CountUp start={0} end={50} suffix="+" />
+                      <CountUp start={0} end={80} suffix="+" />
                     </p>
                   </span>
                 </div>

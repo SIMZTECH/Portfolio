@@ -26,10 +26,10 @@ function Services() {
                 data-aos-duration="1500"
                 className=" leading-5 text-center sm:text-start sm:leading-7 text-textColor text-[15px] sm:text-[17px]"
               >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos laboriosam quaerat officiis ipsum, harum inventore
-                aperiam fugit fugiat eveniet doloremque labore nostrum ut modi!
-                Delectus et consequuntur placeat eum omnis!
+                As a developer, i help in solving complex problems by breaking them down
+                into small indipendent modules for easy debugging and maintenance. I also help in
+                setting up the development environment, plugins installations and website and App
+                management after deployment for a certain period of time.
               </p>
               <div className="flex flex-wrap gap-3">
                 <div
