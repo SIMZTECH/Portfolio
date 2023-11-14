@@ -50,12 +50,22 @@ function Projects() {
           <div className="w-full sm:max-w-6xl">
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:justify-between">
               <div>
-                <h1 className="heading">My Latest Works</h1>
-                <p className=" text-textColor sm:text-[16px] text-[14px]">
+                <h1 
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                  className="heading">My Latest Works</h1>
+                <p 
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                  className=" text-textColor sm:text-[16px] text-[14px]">
                   Perfect solution for digital experience
                 </p>
               </div>
-              <div className="flex items-center gap-2 sm:gap-3 sm:flex-wrap">
+              <div 
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                className="flex items-center gap-2 sm:gap-3 sm:flex-wrap">
                 <button 
                   onClick={()=>currentTabHandler("All")}
                   className={`flex group hover:bg-subheadingColor ${currentTab==="All"?'bg-subheadingColor text-white':''} hover:text-white ease-in duration-200 text-textColor 
@@ -66,7 +76,7 @@ function Projects() {
                   onClick={()=>currentTabHandler("Mobile Apps")}
                   className={`flex hover:bg-subheadingColor ${currentTab==="Mobile Apps"?'bg-subheadingColor text-white':''} hover:text-white ease-in duration-200 text-textColor font-medium 
                   text-[12px] sm:text-[16px] items-center justify-center px-2 sm:px-3 rounded-sm py-1 border border-solid border-subheadingColor`}>
-                  Mobile Apps
+                  Apps
                 </button>
                 <button 
                   onClick={()=>currentTabHandler("Websites")}

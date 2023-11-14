@@ -30,9 +30,9 @@ function ContactUs() {
             <h1 
               data-aos="fade-down"
               data-aos-duration="1500"
-              className="heading"
+              className="heading justify-start w-full text-start"
             >
-                Contact Me
+                My current operation Area.
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-[35px] sm:mt-[55px]">
               <div 

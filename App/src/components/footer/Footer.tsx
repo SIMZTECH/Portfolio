@@ -28,10 +28,8 @@ function Footer() {
 
           <div className="w-full sm:1/2">
             <p className="text-gray-300 leading-7 mt-4 sm:mt-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              unde, magnam debitis consequuntur esse deserunt earum autem vitae
-              doloremque. Tempora in assumenda quos hic rerum eos. Eos
-              reiciendis culpa non.
+              If you have any projects that you feel needs an expert and creativity developer, be it hardware troubleshooting, software 
+              or any related to ICT feel free to contact me. Am ready to work with you!!
             </p>
             <div className="flex items-center gap-4 flex-wrap md:gap-8 mt-10">
               <span className="text-gray-300 font-[600] text-[15px]">
