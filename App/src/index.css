@@ -12,7 +12,7 @@
 
 @layer components{
   .container{
-    @apply w-full max-w-[1440px] mx-auto px-[15px] md:px-[20px] 
+    @apply w-full max-w-[1440px] mx-auto px-[15px] sm:px-[55px] 
   }
   .heading{
     @apply text-headingColor text-[25px] sm:text-[35px] font-medium mb-1 sm:mb-3 left-6 sm:leading-8 text-center

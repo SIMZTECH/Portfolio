@@ -52,23 +52,23 @@ function Header() {
           <div className="flex items-center gap-3">
             <span
               className=" w-7 h-7 md:w-9 md:h-9 rounded-[8px] text-white bg-subheadingColor 
-            font-[400] lg:leading-7 leading-6 flex items-center justify-center md:text-[25px] text-[15px]"
+            font-[400] lg:leading-7 leading-6 flex items-center justify-center md:text-[17px] text-[15px]"
             >
               R
             </span>
             <div className=" leading-5 flex flex-col">
-              <h3 className=" text-headingColor font-[400] lg:text-[18px] text-[15px]">
+              <h3 className=" text-headingColor font-[400] sm:text-[15px] text-[13px]">
                 Rodgers Simpemba
               </h3>
-              <p className=" text-[13px] lg:text-[17px] md:text-[15px] text-textColor">Portfolio</p>
+              <p className=" sm:text-[13px] text-[11px] text-textColor">Portfolio</p>
             </div>
           </div>
           <div className="navigation lg:flex-1 lg:items-center lg:justify-center lg:flex" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-4 ">
               {route.map((item, index) => (
                 <li
-                  className={`px-5 text-center ${item.id!==activeTab?' hover:border-b-[3px] hover:border-headingColor':''} 
-                  flex items-center group cursor-pointer justify-center ${item.id===activeTab?' border-b-[3px] border-solid border-headingColor':''}`}
+                  className={`px-5 text-center ${item.id!==activeTab?' hover:border-b-[2px] hover:border-headingColor':''} 
+                  flex items-center group cursor-pointer justify-center ${item.id===activeTab?' border-b-[2px] border-solid border-headingColor':''}`}
                   key={index}
                   onClick={()=>{
                     setActiveTab(item.id);
@@ -77,7 +77,7 @@ function Header() {
                 >
                   <a
                     href={item.path}
-                    className=" text-[20px] text-textColor hover:text-headingColor ease-in duration-300"
+                    className=" text-[16px] sm:text-[16px] text-textColor hover:text-headingColor ease-in duration-300"
                   >
                     {item.display}
                   </a>
@@ -88,7 +88,7 @@ function Header() {
           </div>
           <div className="flex justify-between items-center gap-5">
             <div className="flex items-center gap-3">
-              <span className="text-[17px] text-textColor font-[500] hidden md:block">
+              <span className="text-[14px] sm:text-[16px] text-textColor font-[500] hidden md:block">
                 +260 969-718-806
               </span>
               <div className=" text-[20px] rounded-full bg-subheadingColor text-white shadow-lg p-3 cursor-pointer">
