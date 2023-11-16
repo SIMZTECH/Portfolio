@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
+import React, { useCallback } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 
 type contactMeType={
   name:string,
@@ -9,6 +11,8 @@ type contactMeType={
 }
 
 function ContactUs() {
+  const [loading,setLoading] = React.useState<boolean>(false);
+  const [dataStatus,setDataStatus] = React.useState<boolean>(false);
   const [textChange,setOnChangeText] = React.useState<contactMeType>({
     name: '',
     email:'',
@@ -20,6 +24,25 @@ function ContactUs() {
     setOnChangeText({...textChange,[e.target.name]:e.target.value})
 
   };
+
+  const submitHandler=async(e:any)=>{
+    e.preventDefault();
+
+    // handle loader
+    loaderHandler();
+  };
+
+  const loaderHandler=useCallback(()=>{
+
+    setLoading(true);
+
+    setTimeout(()=>{
+      setLoading(false);
+      // set data status
+      setDataStatus(true);
+    },2000)
+      
+  },[]);
 
   
   return (
@@ -49,7 +72,13 @@ function ContactUs() {
               </div>
               {/* form */}
               <div>
-                <form
+                {dataStatus?(
+                  <div className='w-full flex items-center justify-center h-[400px]'>
+                    <span className=' w-[50%] text-center text-headingColor leading-7 font-medium text-[24px]'>Your message has been sent 😎</span>
+                  </div>
+                ):(
+                  <form
+                 onSubmit={submitHandler}
                  data-aos="fade-left"
                  data-aos-duration="1500"
                 >
@@ -57,7 +86,8 @@ function ContactUs() {
                     <input 
                      type='text'
                      name='name'
-                     value={textChange.message}
+                     required
+                     value={textChange.name}
                      onChange={handleInputChange}
                      placeholder='Enter Your Name'
                      className='px-3 placeholder:text-textColor text-[17px] w-full bg-transparent focus:outline-none'
@@ -67,6 +97,7 @@ function ContactUs() {
                     <input 
                      type='email'
                      name='email'
+                     required
                      value={textChange.email}
                      onChange={handleInputChange}
                      placeholder='Enter Your Email'
@@ -77,6 +108,7 @@ function ContactUs() {
                     <input 
                      type='text'
                      name='subject'
+                     required
                      value={textChange.subject}
                      onChange={handleInputChange}
                      placeholder='Subject'
@@ -87,7 +119,8 @@ function ContactUs() {
                     <textarea 
                      rows={5}
                      name='message'
-                     value={textChange.name}
+                     required
+                     value={textChange.message}
                      onChange={handleInputChange}
                      placeholder='Leave your message here'
                      className='px-3 placeholder:text-textColor text-[17px] w-full bg-transparent focus:outline-none'
@@ -97,10 +130,11 @@ function ContactUs() {
                     type='submit'
                     className='py-2 bg-textColor w-full mt-3 text-white text-[18px] rounded-md font-light tracking-wider'
                   >
-                      Send message
+                     {loading?<HashLoader color='white' size={25} />:` Send message`}
                   </button>
 
                 </form>
+                )}
               </div>
             </div>
           </div>
